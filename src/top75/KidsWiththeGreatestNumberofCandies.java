@@ -22,5 +22,43 @@ public class KidsWiththeGreatestNumberofCandies {
             b.add(candies[i] + extraCandies >= max);
         }
         return b;
+
+        /*
+        2. çözüm
+        // int[] dizisini List<Integer> yapısına dönüştürün
+        List<Integer> numberList = new ArrayList<>();
+        for (int num : candies) {
+            numberList.add(num);  // Primitif int'ten Integer'a otomatik kutulama (autoboxing)
+        }
+        // en buyuk deger hangisi onu bul
+
+
+        // En büyük elemanı bul
+        int maxNumber = Collections.max(numberList);
+        // listedeki tüm değerleri verilen değerle topla
+
+        List<int[]> candiesList = Arrays.asList(candies);
+
+        List <Integer> resultList = new ArrayList<>();
+
+        for (int[] candie : candiesList){
+            for (int candy : candie) {
+                resultList.add(candy + extraCandies);
+            }
+        }
+
+        // toplanan her değer > en buyuk degerden kucukse false, buyukse true
+        List<Boolean> comparisonResults = new ArrayList<>();
+
+        for(int x = 0; x < candies.length; x++){
+            if(maxNumber > resultList.get(x)){
+                comparisonResults.add(false);
+            } else {
+                comparisonResults.add(true);
+            }
+        }
+
+        return comparisonResults;
+         */
     }
 }

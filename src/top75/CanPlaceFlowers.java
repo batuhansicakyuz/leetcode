@@ -27,5 +27,20 @@ public class CanPlaceFlowers {
             }
         }
         return false;
+        /*
+        int count = 0;
+        for (int flower: flowerbed){
+            if(flower == 0){
+                count++;
+            }
+        }
+        if( n + 2 == count)
+            return true;
+        //give x  , it should be 2 more x
+        //
+        //1. how many zero inside list = y
+        //2. if( ( x + 2 = y  ) == true) else false ;
+        return false;
+         */
     }
 }
